@@ -15,33 +15,33 @@ onMounted(async () => {
 </script>
 <template>
   <section id="pendidikan" class="py-20 min-h-screen bg-white">
-    <div class="container mx-auto px-6">
-      <SectionTitle title="Riwayat Pendidikan" />
+    <div class="container min-h-screen max-w-screen px-40 py-20 overflow-hidden">
+      <SectionTitle title="Riwayat Pendidikan" data-aos="fade-up"/>
       <div class="relative">
-        <div class="absolute h-full border-r-2 border-gray-300" style="left: 50%"></div>
+        <div class="absolute h-full border-r-2 border-gray-300" style="left: 50%" data-aos="fade-up"></div>
         <div
           v-for="(edu, index) in educationHistory"
           :key="edu.id"
           class="mb-8 flex justify-between items-center w-full"
         >
           <div v-if="index % 2 === 0" class="w-full flex">
-            <div class="w-1/2 pr-8 text-right">
-              <p class="font-semibold text-blue-600">{{ edu.period }}</p>
-              <h3 class="text-2xl font-bold text-gray-800">{{ edu.institution }}</h3>
-              <p class="text-gray 600">{{ edu.major }}</p>
+            <div class="kiri w-1/2 pr-8 text-right" data-aos="fade-right">
+              <p class="font-semibold text-black">{{ edu.period }}</p>
+              <h3 class="text-2xl font-bold text-white">{{ edu.institution }}</h3>
+              <p class="text-gray-500">{{ edu.major }}</p>
             </div>
             <div class="w-1/2 flex justify-start">
-              <div class="w-4 h-4 bg-blue-600 rounded-full z 10"></div>
+              <div class="bul w-4 h-4 rounded-full z 10" data-aos="fade-in"></div>
             </div>
           </div>
           <div v-else class="w-full flex">
             <div class="w-1/2 flex justify-end">
-              <div class="w-4 h-4 bg-blue-600 rounded-full z 10"></div>
+              <div class="bul w-4 h-4 rounded-full z 10" data-aos="fade-in"></div>
             </div>
-            <div class="w-1/2 pl-8 text-left">
-              <p class="font-semibold text-blue-600">{{ edu.period }}</p>
-              <h3 class="text-2xl font-bold text-gray-800">{{ edu.institution }}</h3>
-              <p class="text-gray 600">{{ edu.major }}</p>
+            <div class="kanan w-1/2 pl-8 text-left " data-aos="fade-left">
+              <p class="font-semibold text-black">{{ edu.period }}</p>
+              <h3 class="text-2xl font-bold text-white">{{ edu.institution }}</h3>
+              <p class="text-gray-500">{{ edu.major }}</p>
             </div>
           </div>
         </div>
@@ -54,5 +54,22 @@ onMounted(async () => {
 #pendidikan {
   background-image: url('../assets/background/bg3.jpg');
   background-size: cover;
+}
+
+.kiri {
+  background-color: rgb(240, 70, 2);
+  border-radius: 15px;
+  max-width:500px ;
+  margin-right: 85px;
+}
+.kanan {
+  background-color: rgb(240, 70, 2);
+  border-radius: 15px;
+  max-width:500px ;
+  margin-left: 85px;
+}
+
+.bul {
+  background-color:rgb(240, 70, 2) ;
 }
 </style>

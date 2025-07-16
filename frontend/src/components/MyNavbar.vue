@@ -1,6 +1,6 @@
 Code snippet
 <template>
-  <header class="navbar shadow-md sticky top-0 z-50 animate-fade-in">
+  <header class="navbar shadow-md sticky top-0 z-50 animate-fade-in overflow-hidden">
     <nav class="container  mx-auto px-40 py-4 flex justify-between items-center">
       <div class="name text-2xl font-bold text-white">UswatunHasanah</div>
       <ul class="flex space-x-6">

@@ -15,23 +15,24 @@ onMounted(async () => {
 </script>
 <template>
   <section id="proyek" class="min-h-screen py-20 bg-white">
-    <div class="container mx-auto px-6">
-      <SectionTitle title="Proyek Unggulan" />
-      <div class="grid md:grid-cols-2 gap-12">
+    <div class="container min-h-screen max-w-screen px-40 py-20 overflow-hidden">
+      <SectionTitle title="Proyek Unggulan" data-aos="fade-up"/>
+      <div class="grid lg:grid-cols-2 md:grid-cols-2 gap-12">
         <div
           v-for="project in projects"
           :key="project.title"
-          class="bg-gray-50 rounded-lg shadow-lg overflow-hidden"
+          class="card rounded-lg shadow-lg overflow-hidden"
+          data-aos="zoom-in-up"
         >
           <img :src="project.image" alt="Gambar Proyek" class="w-full h-56 object-cover" />
           <div class="p-6">
-            <h3 class="text-2xl font-bold text-gray-800 mb-2">{{ project.title }}</h3>
-            <p class="text-gray-600 mb-4">{{ project.description }}</p>
+            <h3 class="text-2xl font-bold text-white mb-2">{{ project.title }}</h3>
+            <p class="text-white">{{ project.description }}</p>
             <div class="mb-4">
               <span
                 v-for="t in project.tech"
                 :key="t"
-                class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full"
+                class="inline-block bg-gray-500 text-white text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full"
                 >{{ t }}</span
               >
             </div>
@@ -39,7 +40,7 @@ onMounted(async () => {
               :href="project.link"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-blue-600 font semibold hover:underline"
+              class="text-black font semibold hover:underline"
               >Lihat Detail &rarr;</a
             >
           </div>
@@ -52,5 +53,9 @@ onMounted(async () => {
 #proyek {
   background-image:url('../assets/background/bg5.jpg'); 
   background-size: cover;
+}
+
+.card {
+  background-color:rgb(240, 70, 2) ;
 }
 </style>
