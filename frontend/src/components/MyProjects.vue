@@ -26,9 +26,9 @@ onMounted(async () => {
         >
           <img :src="project.image" alt="Gambar Proyek" class="w-full h-56 object-cover" />
           <div class="p-6">
-            <h3 class="text-2xl font-bold text-white mb-2">{{ project.title }}</h3>
+            <h3 class="text-2xl font-bold text-black mb-2">{{ project.title }}</h3>
             <p class="text-white">{{ project.description }}</p>
-            <div class="mb-4">
+            <div class="mb-4 mt-3">
               <span
                 v-for="t in project.tech"
                 :key="t"

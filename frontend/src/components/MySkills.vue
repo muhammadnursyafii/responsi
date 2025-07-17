@@ -28,6 +28,11 @@ onMounted(async () => {
           <p class="text-black">{{ skill.level }}</p>
         </div>
       </div>
+      <div class="flex justify-center">
+        <p class="text-white text-center max-w-5xl">
+          Selama perjalanan karier saya di dunia Informatika, saya telah mengembangkan berbagai keterampilan teknis yang mendukung setiap proyek yang saya kerjakan. Selain kemampuan teknis, saya juga memiliki keterampilan profesional yang membantu saya dalam menyelesaikan proyek secara efektif, seperti pemecahan masalah, komunikasi tim, dan manajemen waktu.
+        </p>
+      </div>
     </div>
   </section>
 </template>
