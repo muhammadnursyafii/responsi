@@ -25,9 +25,9 @@ onMounted(async () => {
           class="mb-8 flex justify-between items-center w-full"
         >
           <div v-if="index % 2 === 0" class="w-full flex">
-            <div class="kiri w-1/2 px-10 py-10 text-right" data-aos="fade-right">
+            <div class="kiri w-1/2 px-12 py-10 text-right" data-aos="fade-right">
               <p class="font-semibold text-black">{{ edu.period }}</p>
-              <h3 class="text-2xl font-bold text-white">{{ edu.institution }}</h3>
+              <h3 class="text-3xl font-bold text-white">{{ edu.institution }}</h3>
               <p class="text-gray-100">{{ edu.major }}</p>
             </div>
             <div class="w-1/2 flex justify-start items-center">
@@ -38,9 +38,9 @@ onMounted(async () => {
             <div class="w-1/2 flex justify-end items-center ">
               <div class="bul2 w-4 h-4 rounded-full z 10" data-aos="fade-in"></div>
             </div>
-            <div class="kanan py-10 px-10 w-1/2 pl-8 text-left " data-aos="fade-left">
+            <div class="kanan py-10 px-12 w-1/2 pl-8 text-left " data-aos="fade-left">
               <p class="font-semibold text-black">{{ edu.period }}</p>
-              <h3 class="text-2xl font-bold text-white">{{ edu.institution }}</h3>
+              <h3 class="text-3xl font-bold text-white">{{ edu.institution }}</h3>
               <p class="text-gray-100">{{ edu.major }}</p>
             </div>
           </div>
@@ -60,7 +60,7 @@ onMounted(async () => {
   background-color: rgb(240, 70, 2);
   border-radius: 15px;
   max-width:500px ;
-  min-height: 180px;
+ 
   margin-right: 102px;
   
 }
@@ -69,7 +69,7 @@ onMounted(async () => {
   border-radius: 15px;
   max-width:500px ;
   margin-left: 85px;
-  min-height: 180px;
+
 
 }
 
